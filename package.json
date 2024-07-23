@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js" 
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server"
   },
   "keywords": [],
   "author": "Iury Escano Cordeiro",
   "license": "ISC",
   "description": "API desenvolvida por mim para listar musicas para um usuario criado na mesma",
   "dependencies": {
-    "express": "^4.19.2"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
